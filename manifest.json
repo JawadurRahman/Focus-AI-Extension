@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Focus AI",
+  "description": "Blocks distracting sites using AI to help you be more productive!",
+  "version": "1.0",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128":"images/icon-128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png",
+      "48": "images/icon-48.png",
+      "128": "images/icon-128.png"
+    }
+  },
+  "permissions": ["tabs", "scripting"],
+  "host_permissions": ["<all_urls>"]
+}
